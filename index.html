@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Redirigiendo a tu recompensa...</title>
+  <title>Redirigiendo...</title>
   <script>
-    // Genera número aleatorio entre 0 y 1
-    var random = Math.random();
+    window.onload = function() {
+      var random = Math.random();
 
-    if (random < 0.5) {
-      // 80% probabilidad
-      window.location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0";
-    } else {
-      // 20% probabilidad
-      window.location.href = "https://ejemplo.com";
-    }
+      if (random < 0.5) {
+        window.location.replace("https://www.youtube.com/watch?v=xvFZjo5PgG0");
+      } else {
+        window.location.replace("https://ejemplo.com");
+      }
+    };
   </script>
 </head>
 <body>
-  <p>Redirigiendo a tu recompensa...</p>
+  <p>Redirigiendo...</p>
 </body>
 </html>
